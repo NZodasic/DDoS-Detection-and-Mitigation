@@ -1,4 +1,4 @@
-# DDoS-Detection-and-Mitigation
+# DDoS DeepLearning Approach
 
 Nhận dạng luồng DDoS bằng mô hình học sâu.
 
@@ -56,19 +56,33 @@ Lưu lượng ngoài: `data_loaders.Generic_Pcap_Dataset`
 
 Các đặc trưng loại trừ thông tin IP/cổng, chỉ dựa vào nội dung gói. Toàn bộ 160 bit được chuẩn hóa thành phân phối [0, 1].
 
-| Loại đặc trưng     | Chuẩn hóa                                                       | Miêu tả                                                         |
+<!-- | Loại đặc trưng     | Chuẩn hóa                                                       | Miêu tả                                                         |
 | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Time         | Nhân 1,000,000, chuyển nhị phân 32 bit | Khoảng cách từ gói đầu tiên |
 | PKT Len      | Nhị phân 16 bit. | Chiều dài gói |
 | IP/TCP Flags     | Nhị phân 8/16/32 bit | Giá trị đặc trưng tương ứng |
-| Protocols    | Nhị phân 8 bit | Loại giao thức |
+| Protocols    | Nhị phân 8 bit | Loại giao thức | -->
+
+|Loại đặc trưng | Phương pháp chuẩn hóa | Mô tả |
+| ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Time | Nhân với 1.000.000, chuyển đổi thành nhị phân 32 bit và chuẩn hóa thành số dấu phẩy động 32 bit. |Khoảng thời gian từ gói hiện tại đến gói đầu tiên trong luồng. Gói đầu tiên là 0.|
+| Chiều dài gói (PKT Len) | Nhị phân 16 bit, chuẩn hóa thành số dấu phẩy động. Cắt bớt nếu vượt giới hạn, gán giá trị 1 cho toàn bộ 16 bit. | Dựa trên chiều dài của gói.|
+| Cờ IP (IP Flags) | Nhị phân 16 bit, chuẩn hóa thành số dấu phẩy động. | Không cần cắt bớt, do giá trị nằm trong phạm vi cố định.|
+| Protocol | Nhị phân 8 bit, chuẩn hóa thành số dấu phẩy động. | Giá trị tương ứng với giao thức của thông điệp IP.|
+| Chiều dài TCP (TCP Len) | Nhị phân 16 bit, chuẩn hóa thành số dấu phẩy động. | Xác định kích thước dữ liệu TCP.|
+| TCP ACK | Nhị phân 32 bit, chuẩn hóa thành số dấu phẩy động. | Giá trị ACK trong giao thức TCP.|
+| Cờ TCP (TCP Flags) | Nhị phân 8 bit, chuẩn hóa thành số dấu phẩy động. | Xác định trạng thái của kết nối TCP.|
+| Kích thước cửa sổ TCP (TCP win size) | Nhị phân 16 bit, chuẩn hóa thành số dấu phẩy động. | Kích thước cửa sổ TCP.|
+| Chiều dài UDP (UDP Len) | Nhị phân 16 bit, chuẩn hóa thành số dấu phẩy động. | Kích thước của gói UDP.|
+
 
 Các đặc trưng trên có tổng cộng 160 bit. Tham số này cần phải tương ứng với hình dạng của mô hình được sử dụng trong quá trình đào tạo.
 
 ## Training và Predict
 
 Quy trình đào tạo sử dụng `experiments.dcnn_on_cic_ddos_2019`:
-1. Tải 10.000 gói tấn công từ CIC DDoS 2019.
+
+1. Tải 10.000 gói tấn công từ CIC-DDoS2019.
 2. Ghi và nhập 10.000 gói lưu lượng thông thường.
 3. Huấn luyện với Trainer đơn giản.
 

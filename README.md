@@ -118,3 +118,7 @@ INFO:templates.utils:Cache is loaded from cache/generic_loader/7-28T05-02/combin
 WARNING:__main__:Attack: about 1%
 ```
 
+## Result
+![image](https://github.com/user-attachments/assets/4640ffd6-2de4-4eca-8ad7-3d8693fd54ff)
+![image](https://github.com/user-attachments/assets/1ca16f63-97d7-401f-845d-20cc0de2c3f4)
+

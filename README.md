@@ -98,24 +98,23 @@ Full model has been loaded successfully!
 Quy trình dự đoán ghi nhận gói từ thiết bị mạng (chỉnh tham số INTERFACE) và ước tính tỷ lệ tấn công. 
 
 ```
-WARNING:__main__:Programme started in predict mode!
-INFO:__main__:Start capture and predict...
-INFO:__main__:Predict turn 1
-INFO:__main__:Capturing...
-INFO:__main__:Capture done, generating predict set...
-100%|████████████████████████████████████████| 1/1 [00:02<00:00,  2.50s/it, Loaded flow number=3943]
-100%|██████████████████████████████████████████████████████| 9730/9730 [00:00<00:00, 1324373.78it/s]
-INFO:templates.utils:Cache is saved to cache/generic_loader/7-28T05-02/combine_set_cache(predict)
-INFO:templates.utils:Cache is loaded from cache/generic_loader/7-28T05-02/combine_set_cache(predict)
-WARNING:__main__:Attack: about 96%
-INFO:__main__:Predict turn 2
-INFO:__main__:Capturing...
-INFO:__main__:Capture done, generating predict set...
-100%|█████████████████████████████████████████| 1/1 [00:03<00:00,  3.12s/it, Loaded flow number=274]
-100%|███████████████████████████████████████████████████████| 1970/1970 [00:00<00:00, 533633.36it/s]
-INFO:templates.utils:Cache is saved to cache/generic_loader/7-28T05-02/combine_set_cache(predict)
-INFO:templates.utils:Cache is loaded from cache/generic_loader/7-28T05-02/combine_set_cache(predict)
-WARNING:__main__:Attack: about 1%
+----- Benign -----
+Predictions: [[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]]
+
+----- Attack -----
+Predictions: [[1]
+ [1]
+ [1]
+ ...
+ [1]
+ [1]
+ [1]]
 ```
 
 ## Result

@@ -78,23 +78,21 @@ Quy trình đào tạo sử dụng `experiments.dcnn_on_cic_ddos_2019`:
 3. Huấn luyện với Trainer đơn giản.
 
 ```
-WARNING:__main__:Programme started in train mode!
-INFO:__main__:Loading normal flow...
-100%|████████████████████████████████████████| 4/4 [00:53<00:00, 13.36s/it, Loaded flow number=1e+4]
-INFO:__main__:Loading attack flow...
-INFO:templates.utils:Cache is loaded from cache/generic_loader/7-28T05-02/label_from_csv_cache
-100%|██████████████████████████████████| 30/30 [00:09<00:00,  3.19it/s, BENIGN=0, MSSQL=0, UDP=1e+4]
-INFO:root:Generating dataset...
-100%|███████████████████████████████████████████████████| 183227/183227 [00:00<00:00, 919449.29it/s]
-INFO:templates.utils:Cache is saved to cache/generic_loader/7-28T05-02/combine_set_cache
-INFO:templates.utils:Cache is loaded from cache/generic_loader/7-28T05-02/combine_set_cache
-Epoch 1/2
-INFO:templates.utils:Cache is loaded from cache/generic_loader/7-28T05-02/combine_set_cache
-2000/2000 [==============================] - 29s 14ms/step - loss: 0.1175 - categorical_accuracy: 0.9808 - categorical_crossentropy: 0.1175
-Epoch 2/2
-INFO:templates.utils:Cache is loaded from cache/generic_loader/7-28T05-02/combine_set_cache
-2000/2000 [==============================] - 28s 14ms/step - loss: 0.0344 - categorical_accuracy: 0.9960 - categorical_crossentropy: 0.0344
-INFO:__main__:Saving weight...
+Epoch 1/10, Loss: 0.0037, Train Accuracy: 0.9995, Test Accuracy: 0.9996
+Epoch 2/10, Loss: 0.0030, Train Accuracy: 0.9996, Test Accuracy: 0.9996
+Epoch 3/10, Loss: 0.0030, Train Accuracy: 0.9996, Test Accuracy: 0.9996
+Epoch 4/10, Loss: 0.0030, Train Accuracy: 0.9996, Test Accuracy: 0.9996
+Epoch 5/10, Loss: 0.0031, Train Accuracy: 0.9996, Test Accuracy: 0.9996
+Epoch 6/10, Loss: 0.0029, Train Accuracy: 0.9996, Test Accuracy: 0.9996
+Epoch 7/10, Loss: 0.0029, Train Accuracy: 0.9996, Test Accuracy: 0.9996
+Epoch 8/10, Loss: 0.0029, Train Accuracy: 0.9996, Test Accuracy: 0.9996
+Epoch 9/10, Loss: 0.0029, Train Accuracy: 0.9996, Test Accuracy: 0.9996
+Epoch 10/10, Loss: 0.0029, Train Accuracy: 0.9996, Test Accuracy: 0.9996
+
+Full model has been saved successfully!
+Full model has been loaded successfully!
+<ipython-input-30-e36e4e49294e>:7: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load("ddos_model_full.pt")
 ```
 
 Quy trình dự đoán ghi nhận gói từ thiết bị mạng (chỉnh tham số INTERFACE) và ước tính tỷ lệ tấn công. 

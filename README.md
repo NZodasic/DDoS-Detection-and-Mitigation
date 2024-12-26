@@ -4,7 +4,7 @@ Nhận dạng luồng DDoS bằng mô hình học sâu.
 
 ## Model
 
-Việc thu thập thông tin thống kê toàn bộ luồng trong môi trường thực tế là không khả thi. Chúng tôi áp dụng mô hình mạng nơ-ron tích chập (CNN) được tham khảo từ LUCID: A Practical Lightweight Deep Learning Solution for DDoS Detection. Các gói dữ liệu được trích xuất trong một khoảng thời gian cố định để làm đầu vào.
+Việc thu thập thông tin thống kê toàn bộ luồng trong môi trường thực tế là không khả thi. Em áp dụng mô hình mạng nơ-ron tích chập (CNN) được tham khảo từ LUCID: A Practical Lightweight Deep Learning Solution for DDoS Detection. Các gói dữ liệu được trích xuất trong một khoảng thời gian cố định để làm đầu vào.
 
 ```
 Model: "DCNNModel"

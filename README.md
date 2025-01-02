@@ -38,10 +38,10 @@ Tập dữ liệu hiện được chọn [Tập dữ liệu CIC DDoS 2019](https
 
 Sử dụng CIC DDoS 2019 Dataset, với lưu lượng tấn công phong phú nhưng thiếu lưu lượng thông thường. Để bổ sung, lưu lượng thông thường được ghi lại thủ công và nhập qua tham số `pcap_file_list`.
 
-Mã xử lý:
+#Mã xử lý:
 
-Lưu lượng CIC DDoS 2019: `data_loaders.CIC_DDoS_2019`
-Lưu lượng ngoài: `data_loaders.Generic_Pcap_Dataset`
+#Lưu lượng CIC DDoS 2019: `data_loaders.CIC_DDoS_2019`
+#Lưu lượng ngoài: `data_loaders.Generic_Pcap_Dataset`
 
 ### Đặc trưng và chuẩn hóa
 
@@ -71,7 +71,7 @@ Các đặc trưng trên có tổng cộng 160 bit. Tham số này cần phải 
 
 ## Training và Predict
 
-Quy trình đào tạo sử dụng `experiments.dcnn_on_cic_ddos_2019`:
+Quy trình đào tạo sử dụng `Project-CS-P-Final.ipynb`:
 
 1. Tải 10.000 gói tấn công từ CIC-DDoS2019.
 2. Ghi và nhập 10.000 gói lưu lượng thông thường.

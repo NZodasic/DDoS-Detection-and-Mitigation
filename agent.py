@@ -62,7 +62,7 @@ async def connect_to_server(machine_id, pcap_file, server_uri):
 
 if __name__ == "__main__":
     pcap_file = "traffic.pcap"
-    server_uri = "ws://192.168.1.100:8765"  # Point to the Ubuntu server
+    server_uri = "ws://192.168.1.2:8765"  # Point to the Ubuntu server
     machine_id = generate_machine_id()
 
     asyncio.run(connect_to_server(machine_id, pcap_file, server_uri))

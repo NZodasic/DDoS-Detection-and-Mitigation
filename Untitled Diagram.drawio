@@ -1,9 +1,216 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.5">
   <diagram name="Page-1" id="UEF_HRW6o0hjfxFKfZXa">
-    <mxGraphModel>
+    <mxGraphModel dx="1487" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="zoOckavbjNfxGauyGle3-31" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="220" y="110" width="900" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-28" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry width="900" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="zoOckavbjNfxGauyGle3-31" source="zoOckavbjNfxGauyGle3-1" target="zoOckavbjNfxGauyGle3-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-1" value="Packet" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="20" y="90" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="zoOckavbjNfxGauyGle3-31" source="zoOckavbjNfxGauyGle3-3" target="zoOckavbjNfxGauyGle3-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="130" y="80" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-6" value="Feature Extractor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="140" y="85" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-7" value="ML Based Detector&lt;div&gt;(RF, ANN)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="270" y="85" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="zoOckavbjNfxGauyGle3-31" source="zoOckavbjNfxGauyGle3-8" target="zoOckavbjNfxGauyGle3-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="159.9999999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="470" y="160" />
+              <mxPoint x="550" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="zoOckavbjNfxGauyGle3-31" source="zoOckavbjNfxGauyGle3-8" target="zoOckavbjNfxGauyGle3-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-8" value="Attack" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="430" y="75" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-10" value="Forward Packet" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="555" y="50" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-19" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="490" y="48" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-20" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="490" y="136" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="zoOckavbjNfxGauyGle3-31" source="zoOckavbjNfxGauyGle3-21" target="zoOckavbjNfxGauyGle3-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-21" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="550" y="125" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-23" value="ML Based Classifier" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="560" y="130" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="zoOckavbjNfxGauyGle3-31" source="zoOckavbjNfxGauyGle3-6" target="zoOckavbjNfxGauyGle3-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="170" as="sourcePoint" />
+            <mxPoint x="400" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-26" value="Mitigation&lt;div&gt;Send Alert | Attack type&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="720" y="130" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-30" value="Agent - Ubuntu (Hyper-V)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="zoOckavbjNfxGauyGle3-31">
+          <mxGeometry x="395" y="11" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-34" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="390" width="900" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-36" target="zoOckavbjNfxGauyGle3-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-36" value="Packet" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="480" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-38" target="zoOckavbjNfxGauyGle3-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-38" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="470" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-43" target="zoOckavbjNfxGauyGle3-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="549.9999999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="550" />
+              <mxPoint x="790" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-43" target="zoOckavbjNfxGauyGle3-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-43" value="Attack" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="465" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-44" value="Forward Packet" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="795" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-45" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="730" y="438" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-46" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="730" y="526" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-48" target="zoOckavbjNfxGauyGle3-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-48" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="515" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-49" value="ML Based Classifier" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="520" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-51" value="Mitigation&lt;div&gt;Send Alert | Attack type&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="520" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-52" value="Agent - Ubuntu (Hyper-V)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="635" y="401" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-84" target="zoOckavbjNfxGauyGle3-89">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="50" y="915" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-84" target="zoOckavbjNfxGauyGle3-92">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="915" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-84" value="Feature Extraction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="900" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-89" target="zoOckavbjNfxGauyGle3-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-89" value="Missing Value Handling" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="960" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-92" target="zoOckavbjNfxGauyGle3-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-92" value="Outlier Detection" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="960" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-60" target="zoOckavbjNfxGauyGle3-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-60" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="800" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-78" value="Raw Traffic Data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="835" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-79" value="Raw Network Traffic" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="800" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-96" target="zoOckavbjNfxGauyGle3-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-96" value="Normalization" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1040" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-99" value="Feature Scaling" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1090" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-101" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1140" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-102" value="Feature Vectors" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1180" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-103" value="Processed Data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1140" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-104" value="Labels" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1180" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-99" target="zoOckavbjNfxGauyGle3-102">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="1105" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoOckavbjNfxGauyGle3-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoOckavbjNfxGauyGle3-99" target="zoOckavbjNfxGauyGle3-104">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="1105" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

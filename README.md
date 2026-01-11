@@ -6,7 +6,6 @@
 Name | Student ID | Role
 :--:|:--:|:--:
 Nguyễn Võ Chí Dũng | 23560012 | Leader - Deploy
-Nguyễn Hoàng Phương Uyên | 23560090 | Research Solution
 Nguyễn Việt An | 23560092 | Data Preprocessing - Model Optimal
 
 
